@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased selection:bg-emerald-200 selection:text-emerald-900;
+  }
+}
+
+@layer components {
+  /* Modern Button styles */
+  .btn-primary {
+    @apply w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg shadow-emerald-500/30 transform transition-all duration-300 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-emerald-500/50;
+  }
+  
+  .btn-secondary {
+    @apply w-full bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:border-slate-300 font-bold py-3.5 px-6 rounded-2xl shadow-sm transition-all duration-300 active:scale-95 focus:outline-none focus:ring-4 focus:ring-slate-200;
+  }
+
+  /* Modern Input fields */
+  .input-field {
+    @apply w-full p-4 bg-white/70 backdrop-blur-sm border border-slate-200/80 rounded-2xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-700 shadow-sm placeholder-slate-400;
+  }
+
+  /* Glassmorphism Cards */
+  .card {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 rounded-3xl shadow-glass hover:shadow-lg transition-all duration-300 p-6;
+  }
+  
+  .glass-panel {
+    @apply bg-white/90 backdrop-blur-xl border border-white rounded-[2rem] shadow-glass;
+  }
+}
